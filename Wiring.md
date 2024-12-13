@@ -32,9 +32,12 @@
 - The other terminal is connected to **GND**.  
 - Internal pull-up resistor is enabled in the code.  
 
-### 5. Laser Module / LED  
-- The **positive terminal** is connected to **GPIO 9** via a suitable resistor (if necessary, to limit current).  
-- The **negative terminal** is connected to **GND**.  
+### 5. Laser Module
+- **VCC** pin of the laser module is connected to the **3.3V** pin on the **Xiao ESP32-C3**.
+- **Signal** pin is connected to **GPIO 9** (or another GPIO pin), used to control the laser (turn it on or off).
+- **GND** pin is connected to **GND** on the **Xiao ESP32-C3**.
+- **Resistor (optional)**: If needed, a suitable resistor is added between **GPIO 9** and the **Signal** pin to limit the current.
+
 
 ## Notes  
 - Ensure that the 3.7V LiPo battery's voltage and current ratings are compatible with the Xiao ESP32C3 and the connected components.  
