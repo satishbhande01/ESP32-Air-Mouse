@@ -1,6 +1,6 @@
 # BLE Mouse with Scroll and Module Control
 
-This project uses an ESP32 to create a Bluetooth Low Energy (BLE) mouse with added functionality. The BLE mouse supports scroll actions (up and down) triggered by physical buttons. Additionally, the project includes a feature to control a laser using a button.
+This project uses an Xiao ESP32C3 to create a Bluetooth Low Energy (BLE) mouse with added functionality. The BLE mouse supports scroll actions (up and down) triggered by physical buttons. Additionally, the project includes a feature to control a laser using a button.
 
 ---
 
@@ -17,6 +17,11 @@ This project uses an ESP32 to create a Bluetooth Low Energy (BLE) mouse with add
 ### Stable Connectivity
 - **Optimized BLE Stability**: Improved loop logic to reduce connection dropouts.
 - **Efficient Processing**: Minimizes delays for smooth operation.
+  
+### Built-in Battery Charging (Xiao ESP32C3)
+- **Battery Charging Capability**: The Xiao ESP32C3 includes onboard circuitry to safely charge a 3.7V LiPo battery via its USB-C port.  
+- **Seamless Integration**: Allows for simultaneous device usage and charging.  
+- **Compact Design**: Eliminates the need for external charging modules.
 
 ---
 
@@ -41,6 +46,8 @@ This project uses an ESP32 to create a Bluetooth Low Energy (BLE) mouse with add
 
 ## Case
 - Acrylic sheets of 1.5mm were used to create a makeshift case for this project.
+
+---
 
 ## Code Overview
 - **Written in C++**: Utilizes the `BleMouse` library for BLE mouse implementation.
